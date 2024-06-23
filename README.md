@@ -50,7 +50,7 @@ This project sets up a basic Node.js server that serves an HTML file. The server
 2. Build the Docker image:
 
     ```sh
-    docker build -t my-node-server .
+    docker build -f  Dockerfile-distroless -t my-node-server .
     ```
 
 3. Run the Docker container:
