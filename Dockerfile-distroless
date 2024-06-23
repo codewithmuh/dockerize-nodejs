@@ -1,0 +1,10 @@
+# specify the node base image with your desired version node:<version>
+FROM cgr.dev/chainguard/node:latest
+
+ENV NODE_ENV=production
+
+WORKDIR /app
+
+COPY --chown=node:node ["package.json", "index.js", "./"]
+
+CMD [ "index.js" ]
