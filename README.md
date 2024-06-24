@@ -46,17 +46,32 @@ This project sets up a basic Node.js server that serves an HTML file. The server
     https://github.com/codewithmuh/dockerize-nodejs.git
     cd my-node-server
     ```
-
-2. Build the Docker image:
+### Using node:20 docker image
+1. Build the Docker image:
 
     ```sh
-    docker build -f  Dockerfile-distroless -t my-node-server .
+    docker build -t my-node-server .
     ```
 
-3. Run the Docker container:
+2. Run the Docker container:
 
     ```sh
     docker run -it --rm -p 3000:3000 my-node-server
     ```
 
-4. Open your browser and navigate to `http://localhost:3000`.
+3. Open your browser and navigate to `http://localhost:3000`.
+
+### Using chainguard cgr.dev/chainguard/node:latest docker image
+1. Build the Docker image:
+
+    ```sh
+    docker build -f  Dockerfile-distroless -t my-node-cg .
+    ```
+
+2. Run the Docker container:
+
+    ```sh
+    docker run -it --rm -p 3000:3000 my-node-cg
+    ```
+
+3. Open your browser and navigate to `http://localhost:3000`.
