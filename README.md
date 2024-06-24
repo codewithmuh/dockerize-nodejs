@@ -1,4 +1,7 @@
 # My Node.js Server with Docker
+![1i (54)](https://github.com/codewithmuh/dockerize-nodejs/assets/51082957/206e5708-a455-44c1-8532-39d98571a6b9)
+
+Youtube Video Link: https://youtu.be/7FGj4EwOX2E
 
 This project sets up a basic Node.js server that serves an HTML file. The server is then containerized using Docker.
 
